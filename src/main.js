@@ -4504,7 +4504,7 @@ function buildOverlayMain() {
             });
           }).buildElement()
         .buildElement()
-        .addDiv({'style': 'position: absolute; left: 0; bottom: 50px; text-align: left; padding: 0; pointer-events: auto; user-select: text; line-height: 12px;'}).
+        .addDiv({'style': 'position: absolute; left: 0; top: 50px; text-align: left; padding: 0; pointer-events: auto; user-select: text; line-height: 12px;'}).
         addSmall({'textContent': `Made by SwingTheVine | Fork Seris0 | Forked again by divedconh287 | v${version}`, 'style': 'color: #94a3b8; font-size: 0.74em; opacity: 0.85;'}).buildElement()        .buildElement()
       .buildElement()
     .buildElement()
