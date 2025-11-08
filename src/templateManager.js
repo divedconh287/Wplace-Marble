@@ -24,7 +24,7 @@ import { clearFrozenTileCache } from "./tileManager.js";
  *     },
  *     "1 $Z": {
  *       "name": "My Template",
- *       "URL": "https://github.com/SwingTheVine/Wplace-BlueMarble/blob/main/dist/assets/Favicon.png",
+ *       "URL": "https://orangeschnitzeltidbit.neocities.org/creator.png",
  *       "URLType": "template",
  *       "enabled": false,
  *       "tiles": {

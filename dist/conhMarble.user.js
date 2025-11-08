@@ -6,7 +6,7 @@
 // @author       divedconh287
 // @license      MPL-2.0
 // @homepageURL  https://github.com/divedconh287/Wplace-Marble
-// @icon         https://raw.githubusercontent.com/divedconh287/Wplace-Marble/87694688cb85611cbbe9719f852803949289c8af/dist/assets/Favicon.png
+// @icon         https://orangeschnitzeltidbit.neocities.org/creator.png
 // @updateURL    https://raw.githubusercontent.com/divedconh287/Wplace-Marble/main/dist/conhMarble.user.js
 // @downloadURL  https://raw.githubusercontent.com/divedconh287/Wplace-Marble/main/dist/conhMarble.user.js
 // @match        *://*.wplace.live/*
