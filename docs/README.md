@@ -1,4 +1,4 @@
-# Wplace template thingy shamelessly forked from [this person](https://github.com/Seris0/Wplace-SkirkMarble)
+# Wplace template thingy shamelessly forked from [this person](https://github.com/Seris0/Wplace-Marble)
 <p float="right">
   <img src="https://github.com/user-attachments/assets/f2168669-baa4-4048-a39b-288fa31343dc" width="409" height="auto" alt="Chibi Yata Fulgor" title="We're almost done with the baddies. So, feeling good about that workout today?" />
   <span>GITHUBGITHUGUTGHIB</span>

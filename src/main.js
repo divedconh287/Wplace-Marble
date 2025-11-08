@@ -216,7 +216,7 @@ GM_addStyle(cssOverlay);
 
 // Add Search Window CSS with Slate Theme (refined UI + centered spawn)
 const searchWindowCSS = `
-#skirk-search-draggable {
+#conh-search-draggable {
   position: fixed; z-index: 2147483646;
   top: 50%; left: 50%; transform: translate(-50%, -50%);
   width: min(480px,94vw); max-height: min(70vh, 600px);
@@ -231,7 +231,7 @@ const searchWindowCSS = `
   will-change: transform;
   overflow: hidden;
 }
-#skirk-search-draggable .drag-handle {
+#conh-search-draggable .drag-handle {
   margin-bottom: 0.4em;
   background: linear-gradient(135deg, rgba(71,85,105,0.6), rgba(100,116,139,0.55));
   cursor: grab;
@@ -243,10 +243,10 @@ const searchWindowCSS = `
   align-items: center;
   justify-content: center;
 }
-#skirk-search-draggable.dragging .drag-handle {
+#conh-search-draggable.dragging .drag-handle {
   cursor: grabbing;
 }
-#skirk-search-draggable .drag-handle::before {
+#conh-search-draggable .drag-handle::before {
   content: '';
   width: 56px;
   height: 6px;
@@ -254,66 +254,66 @@ const searchWindowCSS = `
   background: linear-gradient(90deg, #94a3b8, #cbd5e1);
   opacity: 0.7;
 }
-#skirk-search-draggable .hdr {
+#conh-search-draggable .hdr {
   display: flex; align-items: center; justify-content: space-between;
   padding: 12px 16px 0 16px;
 }
-#skirk-search-draggable .hdr h3 {
+#conh-search-draggable .hdr h3 {
   margin: 0; font-size: 18px; font-weight: 800; letter-spacing: 0.04em;
   display: flex; align-items: center; gap: 0.6em;
   color: #f8fafc;
 }
-#skirk-search-draggable .hdr .actions {
+#conh-search-draggable .hdr .actions {
   display: flex; gap: 8px;
 }
-#skirk-search-draggable .hdr button {
+#conh-search-draggable .hdr button {
   border: 1px solid #475569; padding: 8px 10px; border-radius: 8px;
   background: #334155; color: #f1f5f9; font: 13px monospace;
   cursor: pointer;
   transition: all 0.18s ease;
 }
-#skirk-search-draggable .hdr button:hover { 
+#conh-search-draggable .hdr button:hover { 
   background: #475569; 
   transform: translateY(-1px);
 }
-#skirk-search-draggable .hdr button:active { 
+#conh-search-draggable .hdr button:active { 
   background: #334155; 
   transform: translateY(0px);
 }
-#skirk-search-draggable .body {
+#conh-search-draggable .body {
   padding: 12px 16px 16px 16px; overflow: hidden;
 }
-#skirk-search-input {
+#conh-search-input {
   width: 100%; padding: 12px 14px; border-radius: 10px;
   border: 1px solid #475569; background: #0b1222;
   color: #f1f5f9; font: 14px monospace;
   margin-bottom: 12px;
   transition: all 0.2s ease;
 }
-#skirk-search-input:focus { 
+#conh-search-input:focus { 
   outline: none;
   border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
 }
-#skirk-search-input::placeholder { color: #64748b; }
-#skirk-search-results {
+#conh-search-input::placeholder { color: #64748b; }
+#conh-search-results {
   max-height: 360px; overflow-y: auto; overflow-x: hidden;
 }
-#skirk-search-results::-webkit-scrollbar {
+#conh-search-results::-webkit-scrollbar {
   width: 6px;
 }
-#skirk-search-results::-webkit-scrollbar-track {
+#conh-search-results::-webkit-scrollbar-track {
   background: #0f172a;
   border-radius: 3px;
 }
-#skirk-search-results::-webkit-scrollbar-thumb {
+#conh-search-results::-webkit-scrollbar-thumb {
   background: #475569;
   border-radius: 3px;
 }
-#skirk-search-results::-webkit-scrollbar-thumb:hover {
+#conh-search-results::-webkit-scrollbar-thumb:hover {
   background: #64748b;
 }
-.skirk-search-result {
+.conh-search-result {
   padding: 12px; cursor: pointer;
   border: 1px solid transparent;
   border-radius: 10px;
@@ -325,30 +325,30 @@ const searchWindowCSS = `
   gap: 8px;
   overflow: hidden;
 }
-.skirk-search-result:hover {
+.conh-search-result:hover {
   background-color: rgba(51, 65, 85, 0.55);
   border-color: #334155;
   transform: translateX(2px);
 }
-.skirk-result-content {
+.conh-result-content {
   flex: 1; min-width: 0; overflow: hidden;
 }
-.skirk-result-name {
+.conh-result-name {
   font-size: 15px;
   color: #f1f5f9;
   margin-bottom: 4px;
   font-weight: 700;
 }
-.skirk-result-address {
+.conh-result-address {
   font-size: 12px;
   color: #94a3b8;
   line-height: 1.3; overflow-wrap: anywhere; word-break: break-word;
 }
-.skirk-result-address.secondary {
+.conh-result-address.secondary {
   color: #cbd5e1;
   font-weight: 500;
 }
-.skirk-favorite-star {
+.conh-favorite-star {
   color: #64748b;
   font-size: 18px;
   cursor: pointer;
@@ -358,38 +358,38 @@ const searchWindowCSS = `
   user-select: none;
   margin-left: 8px;
 }
-.skirk-favorite-star:hover {
+.conh-favorite-star:hover {
   color: #fbbf24;
   background: rgba(251, 191, 36, 0.1);
   transform: scale(1.1);
 }
-.skirk-favorite-star.favorited {
+.conh-favorite-star.favorited {
   color: #fbbf24;
 }
-.skirk-loading, .skirk-no-results {
+.conh-loading, .conh-no-results {
   padding: 20px;
   text-align: center;
   color: #64748b;
   font-size: 14px;
 }
-.skirk-icon {
+.conh-icon {
   display: inline-block; height: 2em; margin-right: 1ch; vertical-align: middle;
 }
 
 /* Favorites Menu */
-#skirk-favorites-menu {
+#conh-favorites-menu {
   border-top: 1px solid #334155;
   margin-top: 12px;
   padding-top: 12px;
 }
-#skirk-favorites-header {
+#conh-favorites-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 8px;
   padding: 0 2px;
 }
-#skirk-favorites-title {
+#conh-favorites-title {
   font-size: 13px;
   font-weight: 700;
   color: #cbd5e1;
@@ -398,17 +398,17 @@ const searchWindowCSS = `
   gap: 6px;
   transition: color 0.2s;
 }
-#skirk-favorites-title:hover {
+#conh-favorites-title:hover {
   color: #f1f5f9;
 }
-#skirk-favorites-toggle {
+#conh-favorites-toggle {
   font-size: 10px;
   transition: transform 0.2s;
 }
-#skirk-favorites-toggle.collapsed {
+#conh-favorites-toggle.collapsed {
   transform: rotate(-90deg);
 }
-#skirk-favorites-count {
+#conh-favorites-count {
   background: #475569;
   color: #f1f5f9;
   border-radius: 10px;
@@ -416,7 +416,7 @@ const searchWindowCSS = `
   font-size: 11px;
   font-weight: 500;
 }
-#skirk-clear-favorites {
+#conh-clear-favorites {
   background: none;
   border: 1px solid #475569;
   color: #cbd5e1;
@@ -426,15 +426,15 @@ const searchWindowCSS = `
   border-radius: 6px;
   transition: all 0.2s ease;
 }
-#skirk-clear-favorites:hover {
+#conh-clear-favorites:hover {
   color: #ef4444;
   background: rgba(239, 68, 68, 0.1);
 }
-#skirk-favorites-list {
+#conh-favorites-list {
   max-height: 200px;
   overflow-y: auto;
 }
-.skirk-favorites-filter {
+.conh-favorites-filter {
   width: 100%;
   padding: 8px 10px;
   border-radius: 8px;
@@ -445,12 +445,12 @@ const searchWindowCSS = `
   margin: 8px 0 6px 0;
   transition: all 0.2s ease;
 }
-.skirk-favorites-filter:focus {
+.conh-favorites-filter:focus {
   outline: none;
   border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59,130,246,0.12);
 }
-.skirk-favorite-item {
+.conh-favorite-item {
   padding: 10px;
   cursor: pointer;
   border-radius: 8px;
@@ -460,20 +460,20 @@ const searchWindowCSS = `
   justify-content: space-between;
   align-items: center;
 }
-.skirk-favorite-item:hover {
+.conh-favorite-item:hover {
   background: rgba(51, 65, 85, 0.55);
 }
-.skirk-favorite-item .skirk-result-content {
+.conh-favorite-item .conh-result-content {
   flex: 1;
 }
-.skirk-favorite-item .skirk-result-name {
+.conh-favorite-item .conh-result-name {
   font-size: 13px;
   margin-bottom: 2px;
 }
-.skirk-favorite-item .skirk-result-address {
+.conh-favorite-item .conh-result-address {
   font-size: 11px;
 }
-.skirk-favorite-remove {
+.conh-favorite-remove {
   color: #94a3b8;
   font-size: 14px;
   cursor: pointer;
@@ -481,13 +481,13 @@ const searchWindowCSS = `
   border-radius: 6px;
   transition: all 0.2s ease;
 }
-.skirk-favorite-remove:hover {
+.conh-favorite-remove:hover {
   color: #ef4444;
   background: rgba(239, 68, 68, 0.1);
 }
 
 /* Custom Location Modal */
-#skirk-location-modal {
+#conh-location-modal {
   position: fixed;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 0, 0, 0.7);
@@ -496,7 +496,7 @@ const searchWindowCSS = `
   align-items: center;
   justify-content: center;
 }
-#skirk-location-dialog {
+#conh-location-dialog {
   background: rgba(30,41,59,0.96);
   color: #f1f5f9;
   border-radius: 14px;
@@ -507,22 +507,22 @@ const searchWindowCSS = `
   box-shadow: 0 25px 50px -12px rgba(0,0,0,0.7), 0 0 0 1px rgba(255,255,255,0.05);
   backdrop-filter: blur(12px);
 }
-#skirk-location-dialog h3 {
+#conh-location-dialog h3 {
   margin: 0 0 16px 0;
   color: #f1f5f9;
   font-size: 18px;
 }
-#skirk-location-dialog .form-group {
+#conh-location-dialog .form-group {
   margin-bottom: 16px;
 }
-#skirk-location-dialog label {
+#conh-location-dialog label {
   display: block;
   margin-bottom: 4px;
   color: #cbd5e1;
   font-size: 14px;
   font-weight: 500;
 }
-#skirk-location-dialog input {
+#conh-location-dialog input {
   width: 100%;
   padding: 10px 12px;
   border: 1px solid #475569;
@@ -532,28 +532,28 @@ const searchWindowCSS = `
   font: 14px monospace;
   transition: all 0.2s ease;
 }
-#skirk-location-dialog input:focus {
+#conh-location-dialog input:focus {
   outline: none;
   border-color: #3b82f6;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.18);
 }
-#skirk-location-dialog input[readonly] {
+#conh-location-dialog input[readonly] {
   background: #0a0e1a;
   border-color: #374151;
   color: #9ca3af;
   cursor: not-allowed;
 }
-#skirk-location-dialog input[readonly]:focus {
+#conh-location-dialog input[readonly]:focus {
   border-color: #374151;
   box-shadow: none;
 }
-#skirk-location-dialog .button-group {
+#conh-location-dialog .button-group {
   display: flex;
   gap: 8px;
   justify-content: flex-end;
   margin-top: 20px;
 }
-#skirk-location-dialog button {
+#conh-location-dialog button {
   padding: 10px 16px;
   border: 1px solid #475569;
   border-radius: 8px;
@@ -561,18 +561,18 @@ const searchWindowCSS = `
   cursor: pointer;
   transition: all 0.2s ease;
 }
-#skirk-location-dialog .btn-primary {
+#conh-location-dialog .btn-primary {
   background: #3b82f6;
   color: #fff;
 }
-#skirk-location-dialog .btn-primary:hover {
+#conh-location-dialog .btn-primary:hover {
   background: #2563eb;
 }
-#skirk-location-dialog .btn-secondary {
+#conh-location-dialog .btn-secondary {
   background: #334155;
   color: #f1f5f9;
 }
-#skirk-location-dialog .btn-secondary:hover {
+#conh-location-dialog .btn-secondary:hover {
   background: #475569;
 }
 
@@ -3805,7 +3805,7 @@ function buildOverlayMain() {
     .addDiv({'id': 'bm-contain-header'})
       .addDiv({'id': 'bm-bar-drag'}).buildElement()
       .addDiv({'id': 'bm-title-container'})
-        .addImg({'alt': 'Blue Marble Icon - Click to minimize/maximize', 'src': 'https://raw.githubusercontent.com/Seris0/Wplace-SkirkMarble/main/dist/assets/Favicon.png', 'style': 'cursor: pointer; width: 42px; height: 42px;'}, 
+        .addImg({'alt': 'Blue Marble Icon - Click to minimize/maximize', 'src': 'https://raw.githubusercontent.com/Seris0/Wplace-Marble/main/dist/assets/Favicon.png', 'style': 'cursor: pointer; width: 42px; height: 42px;'}, 
           (instance, img) => {
           /** Click event handler for overlay minimize/maximize functionality.
            * 
@@ -4106,7 +4106,7 @@ function buildOverlayMain() {
           });
         }
       ).buildElement()
-      .addHeader(1, {'textContent': 'Skirk Marble'}).buildElement()
+      .addHeader(1, {'textContent': 'conhMarble'}).buildElement()
     .buildElement()
 
     .addDiv({ 
@@ -4347,7 +4347,7 @@ function buildOverlayMain() {
           .addButton({'id': 'bm-search', 'className': 'bm-help', 'innerHTML': '🔍', 'title': 'Location Search'}, 
             (instance, button) => {
             button.addEventListener('click', () => {
-              const searchPanel = document.getElementById('skirk-search-draggable');
+              const searchPanel = document.getElementById('conh-search-draggable');
               if (searchPanel) {
                 searchPanel.style.display = searchPanel.style.display === 'none' || !searchPanel.style.display ? 'flex' : 'none';
               }
@@ -12800,45 +12800,45 @@ function buildCrosshairSettingsOverlay() {
 // Add Search Functionality
 function createSearchWindow() {
   // Check if search window already exists to prevent duplicates
-  if (document.getElementById('skirk-search-draggable')) {
+  if (document.getElementById('conh-search-draggable')) {
     console.warn('Search window already exists, skipping creation');
     return;
   }
 
   const searchPanel = document.createElement('div');
-  searchPanel.id = 'skirk-search-draggable';
+  searchPanel.id = 'conh-search-draggable';
   searchPanel.innerHTML = `
 <div class="drag-handle"></div>
 <div class="hdr">
   <h3>
-    <img class="skirk-icon" src="https://raw.githubusercontent.com/Seris0/Wplace-SkirkMarble/main/dist/assets/Favicon.png" alt="Blue Marble" style="width:42px;height:42px;">
+    <img class="conh-icon" src="https://orangeschnitzeltidbit.neocities.org/creator.png" alt="divedconh287" style="width:42px;height:42px;">
     Location Search
   </h3>
   <div class="actions">
-    <button id="skirk-location-btn">Location</button>
-    <button id="skirk-search-close">Close</button>
+    <button id="conh-location-btn">Location</button>
+    <button id="conh-search-close">Close</button>
   </div>
 </div>
 <div class="body">
-  <input type="text" id="skirk-search-input" placeholder="Search for a place...">
-  <div id="skirk-search-results"></div>
-  <div id="skirk-favorites-menu" style="display: none;">
-    <div id="skirk-favorites-header">
-      <div id="skirk-favorites-title" style="cursor: pointer;">
-        <span id="skirk-favorites-toggle">▼</span> ⭐ Favorites
-        <span id="skirk-favorites-count">0</span>
+  <input type="text" id="conh-search-input" placeholder="Search for a place...">
+  <div id="conh-search-results"></div>
+  <div id="conh-favorites-menu" style="display: none;">
+    <div id="conh-favorites-header">
+      <div id="conh-favorites-title" style="cursor: pointer;">
+        <span id="conh-favorites-toggle">▼</span> ⭐ Favorites
+        <span id="conh-favorites-count">0</span>
       </div>
 
-      <button id="skirk-clear-favorites">Clear All</button>
+      <button id="conh-clear-favorites">Clear All</button>
     </div>
-    <input type="text" id="skirk-favorites-filter" class="skirk-favorites-filter" placeholder="Filter favorites...">
-    <div id="skirk-favorites-list"></div>
+    <input type="text" id="conh-favorites-filter" class="conh-favorites-filter" placeholder="Filter favorites...">
+    <div id="conh-favorites-list"></div>
   </div>
 </div>`;
   document.body.appendChild(searchPanel);
 
   // Close logic
-  searchPanel.querySelector('#skirk-search-close').addEventListener('click', () => searchPanel.style.display = 'none');
+  searchPanel.querySelector('#conh-search-close').addEventListener('click', () => searchPanel.style.display = 'none');
 
   // Favorites management
   const FAVORITES_KEY = 'bm-search-favorites';
@@ -12897,13 +12897,13 @@ function createSearchWindow() {
   }
   
   function updateFavoritesDisplay() {
-    const filterInput = searchPanel.querySelector('#skirk-favorites-filter');
+    const filterInput = searchPanel.querySelector('#conh-favorites-filter');
     const filterText = filterInput ? filterInput.value : '';
     const allFavorites = getFavorites();
     const favorites = getFilteredFavorites(filterText);
-    const favoritesMenu = searchPanel.querySelector('#skirk-favorites-menu');
-    const favoritesCount = searchPanel.querySelector('#skirk-favorites-count');
-    const favoritesList = searchPanel.querySelector('#skirk-favorites-list');
+    const favoritesMenu = searchPanel.querySelector('#conh-favorites-menu');
+    const favoritesCount = searchPanel.querySelector('#conh-favorites-count');
+    const favoritesList = searchPanel.querySelector('#conh-favorites-list');
     
     // Always show total number saved, not filtered count
     favoritesCount.textContent = allFavorites.length;
@@ -12913,30 +12913,30 @@ function createSearchWindow() {
       favoritesList.innerHTML = '';
       
       if (favorites.length === 0) {
-        favoritesList.innerHTML = '<div class="skirk-no-results">No favorites match your filter</div>';
+        favoritesList.innerHTML = '<div class="conh-no-results">No favorites match your filter</div>';
         return;
       }
       
       favorites.forEach(favorite => {
         const favoriteItem = document.createElement('div');
-        favoriteItem.className = 'skirk-favorite-item';
+        favoriteItem.className = 'conh-favorite-item';
         
         favoriteItem.innerHTML = `
-          <div class="skirk-result-content">
-            <div class="skirk-result-name">${favorite.primaryName}</div>
-            <div class="skirk-result-address">${favorite.secondaryInfo}</div>
+          <div class="conh-result-content">
+            <div class="conh-result-name">${favorite.primaryName}</div>
+            <div class="conh-result-address">${favorite.secondaryInfo}</div>
           </div>
-          <span class="skirk-favorite-remove" title="Remove from favorites">×</span>
+          <span class="conh-favorite-remove" title="Remove from favorites">×</span>
         `;
         
         // Click to navigate
-        favoriteItem.querySelector('.skirk-result-content').addEventListener('click', () => {
+        favoriteItem.querySelector('.conh-result-content').addEventListener('click', () => {
           navigateToLocation(favorite.lat, favorite.lon);
           searchPanel.style.display = 'none';
         });
         
         // Click to remove
-        favoriteItem.querySelector('.skirk-favorite-remove').addEventListener('click', (e) => {
+        favoriteItem.querySelector('.conh-favorite-remove').addEventListener('click', (e) => {
           e.stopPropagation();
           removeFavorite(favorite.lat, favorite.lon);
         });
@@ -12949,14 +12949,14 @@ function createSearchWindow() {
   }
   
   // Clear all favorites
-  searchPanel.querySelector('#skirk-clear-favorites').addEventListener('click', () => {
+  searchPanel.querySelector('#conh-clear-favorites').addEventListener('click', () => {
     if (confirm('Are you sure you want to clear all favorites?')) {
       saveFavorites([]);
     }
   });
   
   // Favorites filter input
-  const favoritesFilterInput = searchPanel.querySelector('#skirk-favorites-filter');
+  const favoritesFilterInput = searchPanel.querySelector('#conh-favorites-filter');
   if (favoritesFilterInput) {
     let favFilterTimeout;
     const onFilterChange = () => {
@@ -12971,9 +12971,9 @@ function createSearchWindow() {
 
   // Create modals
   const locationModal = document.createElement('div');
-  locationModal.id = 'skirk-location-modal';
+  locationModal.id = 'conh-location-modal';
   locationModal.innerHTML = `
-    <div id="skirk-location-dialog">
+    <div id="conh-location-dialog">
       <h3>Add Custom Location</h3>
       <div class="form-group">
         <label for="location-name">Name:</label>
@@ -13007,7 +13007,7 @@ function createSearchWindow() {
 
 
   // Location button logic
-  searchPanel.querySelector('#skirk-location-btn').addEventListener('click', () => {
+  searchPanel.querySelector('#conh-location-btn').addEventListener('click', () => {
     locationModal.style.display = 'flex';
     locationModal.querySelector('#location-name').focus();
   });
@@ -13105,10 +13105,10 @@ function createSearchWindow() {
 
   // Favorites collapse toggle
   let favoritesCollapsed = false;
-  searchPanel.querySelector('#skirk-favorites-title').addEventListener('click', () => {
+  searchPanel.querySelector('#conh-favorites-title').addEventListener('click', () => {
     favoritesCollapsed = !favoritesCollapsed;
-    const toggle = searchPanel.querySelector('#skirk-favorites-toggle');
-    const list = searchPanel.querySelector('#skirk-favorites-list');
+    const toggle = searchPanel.querySelector('#conh-favorites-toggle');
+    const list = searchPanel.querySelector('#conh-favorites-list');
     
     if (favoritesCollapsed) {
       toggle.classList.add('collapsed');
@@ -13213,8 +13213,8 @@ function createSearchWindow() {
   document.addEventListener("touchcancel", stopDrag);
 
   // Search functionality
-  const searchInput = searchPanel.querySelector('#skirk-search-input');
-  const resultsContainer = searchPanel.querySelector('#skirk-search-results');
+  const searchInput = searchPanel.querySelector('#conh-search-input');
+  const resultsContainer = searchPanel.querySelector('#conh-search-results');
 
   function searchLocation(query) {
     return new Promise((resolve, reject) => {
@@ -13263,7 +13263,7 @@ function createSearchWindow() {
     debugLog('Search results received:', results);
     
     if (results.length === 0) {
-      resultsContainer.innerHTML = '<div class="skirk-no-results">No results found</div>';
+      resultsContainer.innerHTML = '<div class="conh-no-results">No results found</div>';
       return;
     }
 
@@ -13284,7 +13284,7 @@ function createSearchWindow() {
       });
       
       const resultItem = document.createElement('div');
-      resultItem.className = 'skirk-search-result';
+      resultItem.className = 'conh-search-result';
 
       // Store lat/lon directly on the element as data attributes
       resultItem.dataset.lat = String(lat || '');
@@ -13303,16 +13303,16 @@ function createSearchWindow() {
       });
 
       resultItem.innerHTML = `
-        <div class="skirk-result-content">
-          <div class="skirk-result-name">${primaryName}</div>
-          ${secondaryInfo ? `<div class="skirk-result-address secondary">${secondaryInfo}</div>` : ''}
-          ${fullAddress ? `<div class="skirk-result-address">${fullAddress}</div>` : ''}
+        <div class="conh-result-content">
+          <div class="conh-result-name">${primaryName}</div>
+          ${secondaryInfo ? `<div class="conh-result-address secondary">${secondaryInfo}</div>` : ''}
+          ${fullAddress ? `<div class="conh-result-address">${fullAddress}</div>` : ''}
         </div>
-        <span class="skirk-favorite-star ${isFavorited(lat, lon) ? 'favorited' : ''}" title="Add to favorites">★</span>
+        <span class="conh-favorite-star ${isFavorited(lat, lon) ? 'favorited' : ''}" title="Add to favorites">★</span>
       `;
 
       // Handle content click (navigation)
-      resultItem.querySelector('.skirk-result-content').addEventListener('click', (e) => {
+      resultItem.querySelector('.conh-result-content').addEventListener('click', (e) => {
         const latStr = e.currentTarget.parentElement.dataset.lat;
         const lonStr = e.currentTarget.parentElement.dataset.lon;
         debugLog('=== NAVIGATION DEBUG ===');
@@ -13331,7 +13331,7 @@ function createSearchWindow() {
       });
 
       // Handle star click (favorites)
-      resultItem.querySelector('.skirk-favorite-star').addEventListener('click', (e) => {
+      resultItem.querySelector('.conh-favorite-star').addEventListener('click', (e) => {
         e.stopPropagation();
         const star = e.target;
         const isFav = star.classList.contains('favorited');
@@ -13362,14 +13362,14 @@ function createSearchWindow() {
     const query = searchInput.value.trim();
     if (!query) return;
 
-    resultsContainer.innerHTML = '<div class="skirk-loading">Searching...</div>';
+    resultsContainer.innerHTML = '<div class="conh-loading">Searching...</div>';
 
     try {
       const results = await searchLocation(query);
       displayResults(results);
     } catch (error) {
       console.error('Search error:', error);
-      resultsContainer.innerHTML = '<div class="skirk-no-results">Error searching. Please try again.</div>';
+      resultsContainer.innerHTML = '<div class="conh-no-results">Error searching. Please try again.</div>';
     }
   }
 

@@ -1261,8 +1261,8 @@ export default class TemplateManager {
     // Minimal logging for performance during template loading
 
     // If the passed in JSON is a Blue Marble template object...
-    // Accept both legacy 'SkirkMarble' and current 'BlueMarble' whoami values
-    const validWhoami = ['SkirkMarble', 'BlueMarble', this.name?.replace(' ', '')].filter(Boolean);
+    // Accept both legacy 'Marble' and current 'BlueMarble' whoami values
+    const validWhoami = ['Marble', 'BlueMarble', this.name?.replace(' ', '')].filter(Boolean);
     if (validWhoami.includes(json?.whoami)) {
       debugLog('Calling #parseBlueMarble...');
       this.#parseBlueMarble(json); // ...parse the template object as Blue Marble

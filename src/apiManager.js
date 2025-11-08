@@ -100,7 +100,7 @@ export default class ApiManager {
           }
           
           // Log paint data for debugging
-          debugLog('Skirk Marble: Paint Data:', this.userPaintData);
+          debugLog('conhMarble: Paint Data:', this.userPaintData);
           
           overlay.updateInnerHTML('bm-user-name-content', `<b>Username:</b> ${escapeHTML(dataJSON['name'])}`); // Updates the text content of the username field
           try {
@@ -220,7 +220,7 @@ export default class ApiManager {
       const timeToFullMs = chargesNeeded * cooldownMs;
       
       // Store data for countdown
-      window.skirkChargeData = {
+      window.conhChargeData = {
         current: currentCharges,
         max: maxCharges,
         cooldownMs: cooldownMs,
@@ -232,11 +232,11 @@ export default class ApiManager {
       this.updateFullChargeDisplay(overlay);
       
       // Start countdown interval
-      if (window.skirkChargeInterval) {
-        clearInterval(window.skirkChargeInterval);
+      if (window.conhChargeInterval) {
+        clearInterval(window.conhChargeInterval);
       }
       
-      window.skirkChargeInterval = setInterval(() => {
+      window.conhChargeInterval = setInterval(() => {
         this.updateFullChargeDisplay(overlay);
       }, 1000); // Update every second
     } else {
@@ -256,9 +256,9 @@ export default class ApiManager {
    * @since 1.0.0
    */
   updateFullChargeDisplay(overlay) {
-    if (!window.skirkChargeData) return;
+    if (!window.conhChargeData) return;
     
-    const data = window.skirkChargeData;
+    const data = window.conhChargeData;
     const elapsed = Date.now() - data.startTime;
     const remainingMs = Math.max(0, data.timeToFull - elapsed);
     
@@ -274,9 +274,9 @@ export default class ApiManager {
       } catch(_) {}
       
       // Clear interval when full
-      if (window.skirkChargeInterval) {
-        clearInterval(window.skirkChargeInterval);
-        window.skirkChargeInterval = null;
+      if (window.conhChargeInterval) {
+        clearInterval(window.conhChargeInterval);
+        window.conhChargeInterval = null;
       }
       return;
     }
