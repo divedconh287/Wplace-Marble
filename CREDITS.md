@@ -6,6 +6,7 @@ This project builds upon the excellent work of several contributors from the wpl
 
 - **Seris0** - Fork maintainer and primary developer
 - **SwingTheVine** - Original Blue Marble creator
+- **divedconh287** - blegh
 
 ## Code Contributors
 
