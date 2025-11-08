@@ -18,7 +18,7 @@
 // @connect      nominatim.openstreetmap.org
 // @connect      wplace.live
 // @connect      wplace.lol
-// @resource     CSS-BM-File https://raw.githubusercontent.com/divedconh287/Wplace-Marble/87694688cb85611cbbe9719f852803949289c8af/dist/conhMarble.user.css
+// @resource     CSS-BM-File https://raw.githubusercontent.com/divedconh287/Wplace-Marble/main/dist/conhMarble.user.css
 // ==/UserScript==
 
 // Wplace  --> https://wplace.live
