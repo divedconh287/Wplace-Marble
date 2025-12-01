@@ -9,5 +9,5 @@
 <p>gang</p>
 <img src="https://github.com/user-attachments/assets/2308ecd8-c3fc-47a0-8d13-295379691931" width="249" height="515" alt="monster zero ultra" title="Monster to cover someone elses Celsius (with permission [it was a war])"/>
 <p>monster</p>
-<img  src="https://github.com/user-attachments/assets/dc0cf395-264f-49d3-879e-22ec3581c584"width="841" height="952" alt="sweet trip" title="sweet trip"/>
+<img src="https://github.com/user-attachments/assets/7bfa23bb-24c2-455f-828f-f68930122f9e" width="718" height="713" alt="sweet trip" title="sweet trip"/>
 <p>sweet trip</p>
